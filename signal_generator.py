@@ -172,6 +172,13 @@ class SeismicGeneratorApp:
         self.root.resizable(False, False)
         self.root.configure(bg='#1c1c1e')
 
+        # Window icon
+        icon_path = os.path.join(os.path.dirname(__file__), 'assets', 'geoshake_icon.png')
+        if os.path.exists(icon_path):
+            icon = tk.PhotoImage(file=icon_path)
+            self.root.iconphoto(True, icon)
+            self._icon = icon  # prevent garbage collection
+
         self.mode = tk.StringVar(value='Sine')
         self.playing = False
         self._debounce_id = None
@@ -202,9 +209,24 @@ class SeismicGeneratorApp:
         main = ttk.Frame(self.root)
         main.pack(fill='both', expand=True, padx=16, pady=12)
 
-        # Header
-        ttk.Label(main, text='GeoShake Seismic Signal Generator',
-                  style='Header.TLabel').pack(pady=(0, 12))
+        # Header — branded logo + stacked text
+        header = ttk.Frame(main)
+        header.pack(pady=(0, 12))
+
+        icon_path = os.path.join(os.path.dirname(__file__), 'assets', 'geoshake_icon.png')
+        if os.path.exists(icon_path):
+            logo_img = tk.PhotoImage(file=icon_path)
+            logo_img = logo_img.subsample(logo_img.width() // 40)
+            self._logo_img = logo_img  # prevent GC
+            logo_lbl = tk.Label(header, image=logo_img, bg='#1c1c1e')
+            logo_lbl.pack(side='left', padx=(0, 10))
+
+        text_frame = ttk.Frame(header)
+        text_frame.pack(side='left')
+        ttk.Label(text_frame, text='GeoShake',
+                  font=('Helvetica', 20, 'bold')).pack(anchor='w')
+        ttk.Label(text_frame, text='SIGNAL GENERATOR',
+                  font=('Helvetica', 11), foreground='#86868b').pack(anchor='w')
 
         # Mode buttons
         mode_frame = ttk.Frame(main)
