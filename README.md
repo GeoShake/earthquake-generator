@@ -5,6 +5,11 @@
 [![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-3776ab?logo=python&logoColor=white)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/platform-macOS%20%7C%20Linux%20%7C%20Windows-lightgrey)]()
+[![GeoShake](https://img.shields.io/badge/GeoShake-geoshake.org-ff6b35?logo=data:image/png;base64,iVBORw0KGgo=&logoColor=white)](https://geoshake.org)
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/GeoShake/earthquake-generator/main/assets/preview_app.png" alt="GeoShake Seismic Signal Generator" width="700">
+</p>
 
 ---
 
@@ -58,28 +63,28 @@ The `Earthquake` mode generates a geophysically structured waveform:
 <summary><strong>🔊 Click to expand all waveform previews</strong></summary>
 
 #### Sine Wave
-![Sine Wave — 5 Hz](assets/preview_sine.png)
+![Sine Wave — 5 Hz](https://raw.githubusercontent.com/GeoShake/earthquake-generator/main/assets/preview_sine.png)
 
 #### P-Wave Burst
-![P-Wave Burst — 5 Hz, α=3.0](assets/preview_pwave.png)
+![P-Wave Burst — 5 Hz, α=3.0](https://raw.githubusercontent.com/GeoShake/earthquake-generator/main/assets/preview_pwave.png)
 
 #### S-Wave Burst
-![S-Wave Burst — 2 Hz, α=2.0](assets/preview_swave.png)
+![S-Wave Burst — 2 Hz, α=2.0](https://raw.githubusercontent.com/GeoShake/earthquake-generator/main/assets/preview_swave.png)
 
 #### Frequency Sweep
-![Frequency Sweep — 2 Hz → 50 Hz](assets/preview_sweep.png)
+![Frequency Sweep — 2 Hz → 50 Hz](https://raw.githubusercontent.com/GeoShake/earthquake-generator/main/assets/preview_sweep.png)
 
 #### Synthetic Earthquake
-![Synthetic Earthquake — 20s composite](assets/preview_earthquake.png)
+![Synthetic Earthquake — 20s composite](https://raw.githubusercontent.com/GeoShake/earthquake-generator/main/assets/preview_earthquake.png)
 
 #### Ambient Noise
-![Ambient Noise — Traffic, HVAC, Footsteps](assets/preview_noise.png)
+![Ambient Noise — Traffic, HVAC, Footsteps](https://raw.githubusercontent.com/GeoShake/earthquake-generator/main/assets/preview_noise.png)
 
 #### Amplitude Ramp
-![Amplitude Ramp — 5 Hz](assets/preview_ramp.png)
+![Amplitude Ramp — 5 Hz](https://raw.githubusercontent.com/GeoShake/earthquake-generator/main/assets/preview_ramp.png)
 
 #### Emergent P-Wave
-![Emergent P-Wave — 5 Hz, τ=1.0s](assets/preview_emergent.png)
+![Emergent P-Wave — 5 Hz, τ=1.0s](https://raw.githubusercontent.com/GeoShake/earthquake-generator/main/assets/preview_emergent.png)
 
 </details>
 
